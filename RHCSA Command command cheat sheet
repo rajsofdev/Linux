@@ -1,4 +1,4 @@
-Touch command
+##Touch command
 #touch <file_name> - create single empty file
 #touch <file_name1> <filename2> <filename3> - create multiple empty files
 #touch <filename1..10> - create multiple file from filename1 to filename10

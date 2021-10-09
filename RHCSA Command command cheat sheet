@@ -1,0 +1,472 @@
+Touch command
+#touch <file_name> - create single empty file
+#touch <file_name1> <filename2> <filename3> - create multiple empty files
+#touch <filename1..10> - create multiple file from filename1 to filename10
+
+PWD – Present working Directory
+#pwd – to see the present working directory path
+
+Clear command
+#clear – to clear the screen
+
+History Command
+#history – to see the history of the command
+#history –c – to clear the history command
+#!< Command number > - to execute particular command 
+#!! – execute last executed command.
+
+
+Cat command
+#cat <filename> - to see the file content
+#cat <filename1> <filename2> >> filename3 – to concatenate file into filename3
+#cat <filename> | w – work count, -l – line count, - c – character count
+#cat <filename> | wc – it will show full details of line, word and character.
+
+CD – Change directory
+#cd <directory name> - to get into directory
+#cd .. – to get back from the directory
+#cd - = it will take to last change directory
+#cd ~ - it will take to home directory
+
+MKDIR command – Make directory
+#mkdir <directory name> - to create directory
+#mkdir <dir1> <dir2> <dir3> - to make multiple directory
+#mkdir –p dir1/dir2/dir3/dir4 – to make directory inside the directory
+
+RMDIR Command – remove directory
+#rmdir <directory name> - to remove the empty directory
+
+RM command – remove 
+#rm <filename> - remove file
+#rm –rf <file or directory name> - remove file or directory forcefully without any confirmation
+#rm –i <Filename> – remove the file with confirmation, i – use for interactive.
+#rm –r <filename> - recursive mode to delete directory
+#rm –f <filename> – remove the file forcefully without confirmation.
+#rm –v <file name> - display information as deleting the file or folder.
+
+MV Command – Move command
+#mv oldfilename newfilename – it will change the old filename to new filename
+#mv file1 file2 file3 file4 <path to move the files> - it will move the file.
+#mv –u items <directory path> - update the items
+#mv –v…… - v use for verbose
+#mv –i items <directory> – it will give warning before overriding the file, interactive mode.
+
+UNAM –
+#uname –a – show the machine detail and its version 
+
+Date command
+#date – show the current date
+#date +%F – show the full date
+#date +%D-%M-%Y – show the full date with – format
+#cal – to see the calendar.
+#cal 11 2014 – to display the calendar November 2014.
+
+
+CP command – Copy the file
+#cp <filename> <destination path> - copy the file to destination directory
+#cp *.txt <destination path> - copy all the .txt file to destination directory
+#cp –pv <filename> <destination name> - copy the files without changing its properties
+#cp –Rv <Directory name> <Destination> - copy the directory to destination path
+#cp –u <source file> <destination directory> - update the missing file
+
+LS command – List file and directory
+#ls –la – show all the file and directory in present directory along with hidden files
+#ls –ltr – show directory along with time
+#ls –lah – show the file or directory in human readable format
+#ls –d – show directory only
+#ls –m – show the file using command list
+#ls –la >> filename – to append the output in filename
+#ls –la > filename – to override the file with output 
+#ls –lt –reverse – to reverse the listing directory and files
+#ls –S – short the result by file size
+#ls –l – show the result in reverse format
+
+DF command – Disk Fragment 
+#df – show the free space details
+#df –h – show partition in human readable format 
+#df –T – show current path
+
+Hard and Soft link – LN
+#ln fun fun-hard – create a hardlink file
+#ln fun dir1/hard – same as above
+#ln –s fun fun-sym – create  soft link
+
+Help command – display usage information
+#mkdir –help – to see the command details how to use it
+#man – display program manual page
+
+APROPOS – Display Appropriate Commands
+#apropos floppy – it show the command details
+
+More command
+#more – read more log file, q to quit
+
+WHO Command
+#who – show who logged in currently
+#who –r – run level
+#who –H – show who logged in and when
+#w – show how my user logged in
+#who –m –H – show the details in table format
+#who –p –H – show all the active process
+#who –d –H – show all dead process
+
+PS command
+#ps – list all the process 
+#ps –aux – show running process with details
+#ps –U <User name> - show the process about users
+#pstree – it will show all the parent and child process in tree format
+#ps –aux –z – the process which is died as zombie
+#ps –a – it will show all the running process
+#ps –r – it will show all the process owned by you
+#ps –fU <username> - it will show all the process of particular user
+#ps –fG <Group Name> - it will show all the process of that particular group
+#ps –eo pid, ppid, user, cmd – view custom field
+#ps –ef – it will show all the process
+#ps –ef | grep sleep – it will show sleep process.
+#ps –C <process name> - search with name process
+#jobs – show background running process
+#fg %<process id> - to bring the process from back ground to fore ground.
+#kill -<process id> - to end or terminate the process
+#pgrep –u <root> - it will show root processes
+#pgrep –u root  ssh – it will show root process with ssh
+#pgrep –l – 
+#kill –l- show all the process
+
+CHMOD Command – change mode
+#chmod +/-<permission number > <File/Directory name> - to change read write and execute permission(RWE), read -4, write -2 and execute -1. 
+#chmod +x <file name> - to add execute permission.
+#chmod +r <file name> - to add read permission.
+#chmod +w <file name> - to add write permission.
+#chmod 777 <file name> - to add rwe permission to all.
+
+CHOWN Change owner
+#chwon <username> root:<filename> - change the file permission to root
+
+CHGRP Change group
+#
+
+DU Command
+#du –sh </filepath> - show the file size
+
+Compress and decompress – z use for gunzip, j use for bunzip
+#tar –cvzf <filename with .gz> </path to compress the files> - to compress the files using gun zip.
+#tar –cvzf <filename of the compress> *.txt  - compress all the .txt file.
+#tar –xvf <zipped file name> - to unzip the compressed file
+#tar –cvf <filename with .tar> <filenam1> <file2> <file3> - it will compress given file name in .tar.
+#tar –uvf <archive file.tar> <file1 file2 file3> - update the file in .tar.
+#tar –tf <file name with .tar> - list all the 
+#tar –cvjf <file name with .tar.bz2> <file1 file2 file3 file4> - compress using bun zip
+#zip <filename with .zip> <file1 file2 etc> - normal zip
+#zip –d <zipfile name> - to delete the fil
+
+SCP Secure copy command
+#scp <filename> root:<IP address>:</filepath or remote machine path> - to copy the file from remote machine.
+#scp <multiple file name> <destination user name>@<destination IP>:/<path to store the data> - it will transfer multiple file at given user directory
+#scp –C filename <Destination User name>@... – it will compress the data then it will send.
+#scp –r <directory name> <destination user>@... – it will transfer the directory to destination
+#scp –rvp <filename> <username>@... – it will send the file/directory while preserving the metadata.
+#scp –l 500 <filename> <username>@... – it will reduce the bandwidth then send the data
+
+
+FIND command
+# find /<Path> -iname <file name>           - to search files with file name
+# find /<Path> -perm 770                            - to search files with their permissions
+# find /<Path> -user <user name>            - to search files with user ownership
+# find /<Path> -size 10M                             - to search files with their size
+#locate <filename> - search the file based on string name
+
+GREP Command – Regular expression
+#grep –V – show the version of grep command
+#grep <string name> <File name> - search the string in file
+#grep –i <string name> <File name> - ignore the case sensitive
+#grep –v <string name> <File name> - ignore that line and rest will show
+#grep –iv <string name> <File name> - ignore which is matching and show rest of the line.
+#grep –A 2 <string name> <File name> - it will match then print after 2 line
+#grep – C 1 <string name> <File name> - show one line up and one line down
+#grep –B <string name> <File name> - show the up lines after matching it
+
+MAN Command
+#man passwd – to show the passwd file usage
+#man –s 5 passwd – to see the developer file usage
+#man –k printf – it will show the short of this file
+#pinfo – its same as man
+#info – its same as above
+#whereis <command name> - show the where command does exist
+#whatis <command> - tells about command 
+1 - User commands 
+2 - Programming interfaces kernel system calls 
+3 - Programming interfaces to the C library 
+4 - Special files such as device nodes and drivers 
+5 - File formats 
+6 - Games and amusements such as screen savers 
+7 - Miscellaneous 
+8 - System administration commands
+#man 5 passwd – it will show the details about passwd file
+
+Create and Delete Partitions
+#lsblk – it will show the block details of drive
+#fdisk –l – it will list all the partition details which is updated in dev file system
+#udevadm – it will update the partition in dev file system after creating
+#mkfs.<filesystem name> /dev/<partitionname> - to convert the partition into particular file system.
+#mkfs.xfs /dev/dv1 – convert dv1 partition into xfs file system, you can use ext4 for ext4 partion.
+#mkdir <directoryname> - create a directory to mount the partition
+#mount /dev/<partitionname> </directoryname> - mount the partition to directory.
+#unmount /<partitionname> - it will unmount partition.
+
+#fdisk /dev/<partitionname> - follow the procedure to delete or create partition, press d for delete the partition, n – to create new partition and many more.
+#udevadm trigger – to update the partition table after deleting the partition
+#df –h – to see the mounted partition
+#partprobe /dev/<partitionname> - to update the partition
+#fdisk /dev/<partitionname> - type L to see all the partition conversation list, 8e – for LVM.
+
+#pvcreate /dev/<LVM partitionname> - to create physical volume.
+#pvs – to see the physical volume list
+#pvdisplay –m – it will give details information how many physical extend are used
+
+#vgcreate <Virtual Group Name> </dev/PV1 /dev/pv2> - to add all the PV in a single Virtual group.
+#vgs – to list all the virtual group details
+
+#lvcreate –n <name for logical volume to create> -L <size of the volume to create> <Virtual group name> - it will create a Logical volume
+#lvcreate –n lv0 –L 4G VG0 – it will create 4GB logical volume from the Virtual group VG0.
+#lvdisplay /dev/VG0 – show all the logical volume 
+#mkfs.ext4 /dev/VG0/lv0 – create a lv0 as a ext4 file system.
+#mount – to see the mounted details
+#lvs – to see login volume
+
+#lvextend –L +1G /dev/VG0/lv0 – it will extend lv0 partition size to 1GB
+#resize2fs /dev/VG0/lv0 – it will show exact size of extended partition.
+#e2fsck –f /dev/VG0/lv0 – to check file details if there is any error
+#resize2fs /dev/VG0/lv0 1G – it will reduce 1GB size from that partition
+
+#free –m – to see the swap memory
+#fdisk /dev/<partitionname> - select 82 to make swap memory
+#partprobe /dev/<partionname> - to update and save the new partion
+#mkswap /dev/<partition name> - to make swap of particular partition
+Update in fstab
+#swapon –s – to on the swap partition details
+#swapoff /dev/<partition name> – to off the swap partition.
+#blkid /dev/sdc1 – verify the swap 
+ 
+User Management 
+#useradd <username> - to add the user. It will modify following files - home, login shell, group, .bash_profile, .bash_logout, -/etc/passwd, etc/shadow, etc/gshadow(this will modify only while using group users, users), etc/skel, etc/group
+#cat /etc/default/useradd – it will show default user in this file.
+#cd /etc/skel – it’s a default directory which get assigned while creating user.
+#cat /etc/login.defs – it will have the login definition.
+#useradd –u 2000 –g <primary groupname> -G <secondary group1 group2> -c <comment> -s </bin/bash> -d <specify the home path> –e <account expiry date – ex 2021-11-24> -p <password> <username to create> - it will create new user with given details.
+#usermod – to change the properties.
+#usermod –l <new usernam> <old usernam> - change the username
+#usermod –aG group1, group2, group3 <username> - it will append the user in secondary group.
+#id <username> - to see the user details
+#usermod –s /bin/bash <username> - it will provide the shell to login
+#usermod –s /sbin/nologin <username> - it will not allow user to login.
+#cat /etc/shells – to see all the login shells
+#usermod –L <username> - it will lock the account. You can see the escalation mark! in shadow file.
+#usermod –U <username> - to unlock the user account
+#usermod –f <username> - make user inactive completely.
+
+Usermod command options – 
+-c = We can add comment field for the user account.
+-d = To modify the directory for any existing user account.
+-e = Using this option we can make the account expiry in specific period.
+-g = Change the primary group for a User.
+-G = To add a supplementary groups.
+-a = To add anyone of the group to a secondary group.
+-l = To change the login name
+-L = To lock the user account. This will lock the password so we can’t use the account.
+-m = moving the contents of the home directory from existing home dir to new dir.
+-p = To Use un-encrypted password for the new password. (NOT Secured).
+-s = Create a Specified shell for new accounts.
+-u = Used to Assigned UID for the user account between 0 to 999.
+-U = To unlock the user accounts. This will remove the password lock and allow us to use the user account.
+
+#chage –l <usernam> - to see the account details
+#chage –m 0 –M 90 –W 10 –E 2021-11-25 <username> - it will change the account details accordingly. –m – minimum password change day, -M – Maximum password change day, -W- no of warning, -E- password expiry date.
+
+#groupadd <groupname> - create group
+#cat /etc/group – to see the group name
+#gpasswd –a <username> <groupname> - give special permission to user to modify the group.
+#gpasswd –M user1 user2 user3 etc <group name> - to add multiple user at a time in group.
+#groupmod –ptest <Group username> - protect from password
+
+
+ACL Access control list
+#ls –ltr – list all the file and directory
+#setfacl –m u:<username>:r<filename> - grant read permission to a particular user for that file
+#setfacl –x u:<username> <filename> - it will revoke user permission from the particular file.
+#getfacl <file/directory name> - it will show the user permission.
+#su -<username> - switch the user 
+#setfacl –m g:<groupname>:rwx<directory name> - set the rwx permission for that group.
+#getfacl <filename> | setfacl –set-file=-<filename2> - it will set the same permission of file1 to file2.
+#getfacl –access <old directory> | setfacl –d –M- <new directory> - it will copy or replicate same old directory permission to new directory.
+#setfacl –b <filename> - it will remove all the permission from that file.
+#cat /etc/profile – to see the umask value
+
+Special permission
+#chmod u+s <file name> - set setuid permission. Setuid value is 4
+#chmod 4755 <filename> - it will set the setuid permission
+#chmod g+s <filename> - setgid permission, setgid value is 2.
+#chmod 2755 <filename – to set the gid permission
+#chmod +t <filename> - to assign sticky bit permission, its value is 1
+
+Networking
+#ip route show – it will show the rout details
+#ip addr – show the network interfaces
+#whatis ifconfig – you can see about ifconfig
+#whatis netstat – print network connection
+#netstat –r – it will show the network details with connected devices details.
+#netstat –t - show all the TCP connection
+#netstat –l – listen the ports
+#netstat –lt – listening tcp connection, u at place of t is use for udp connection
+#netdiscover – it will show all the connected network devices
+
+#htop – show all the process column wise
+
+
+Download files
+#curl –O <filename> <file or directory url to download> - it will download and save as filename
+#curl –O <file URL> - it will download without changing the name, with default name.
+#curl –L <weburl> - it will redirect to website and it will show the content in command
+#curl –I <web URL> - it will show the cookie details and other website details
+#curl –v <web URL> - it will show the entire content of the website
+
+
+NMCLI Network Management CLI
+#nmcli device status – to see the network device status
+#nmcli connection show – it will show the connection 
+#nmcli connection add type ethernet con-name Home ifname eth22 – a connection profile will be created with Home name.
+#nmcli general status – show the connection status
+#nmcli device status – it will show how many devices are connected.
+#nmcli device show <device name> - show the particular device name
+#nmcli connection delete <device name > - to remove the connection.
+#nmcli connection modify <network name> ipv4.address <IP address> ipv4.g <gateway IP> ipv4.dns <DNS address> +ipv4.dns <secondary DNS address> connection.autoconnect <yes or no> ipv4.method manual – it will modify the connection.
+#cat /etc/sysconfig/network-scripts/ifcfg-<connectionname> - you can see the connection details in this file.
+#nmcli device monitor –device related information
+#nmcli connection down <connection name> - it will down the connection
+#nmcli connection up <connection name> - it will up the connection
+#nmcli connection modify <Connection name> connection.permission users:<username> - it will give particular use to down or up the connection.
+#nmtui – it will open graphical user interface to setup the connection.
+#nmtui edit Home – it will edit the Home connection in gui.
+
+NIC Teaming –
+#nmcli connection add type team con-name team0 ifname team0 config’{“runner”:{“name”:”activebackup”}}’ – it will create team0 connection then modify it.
+#nmcli connection modify team0 ipv4.address <ipaddress> ipv4.gateway <IP gateway> ipv4.dns <dns ip> connection.autoconnect yes ipv4.method manual – it will modify the connection.
+#nmcli connection add type team-slave con-name team0-port0 ifname <devicename ex ens37> master team0 – it will make team0 a master connection and it will in that, similarly we can add other connection into that for load balancing 
+#teamdctl team0 status - 
+
+Firewall configuration –
+-systemctl disable iptables
+	- systemctl disable ip6tables
+	- systemctl stop ipv6tables
+	- systemctl stop iptables
+	- systemctl mask ip6tables
+	- systemctl mask iptables
+	- systemctl status iptables
+	- systemctl status ip6tables
+	- yum install –y firewalld firewall-config
+	- systemctl status firewall
+	- systemctl enable firewall.service
+	- systemctl start firewall.service
+	#firewall-cmd –get-default-zone
+	#firewall-cmd –set-default-zone=home
+	#firewall-cmd –get-default-zone
+	#firewall-cmd –get-active-zone
+	#firewall-cmd –version
+	#firewall-cmd –zone=public –list-iterface
+	#firewall-cmd –add-interface=eth0 –zone=public
+	#firewall-cmd –remove-interface=eth0 –zone=public
+	#firewall-cmd –get-services
+	#firewall-cmd –permanent –get-services
+	#firewall-cmd –panic-on [Disable incoming and outgoing packets]
+
+SELinux command
+#cat /etc/selinux/config – it will show all the selinux configuration details
+#getenforce – show the current status of selunx whether its enforce or not
+#sestatus – show the status
+
+Head, Sort, Tail, Uniq, Paste, Cut, Tr, Sed and diff commands 
+#head –n <no of line to show> <filename> - it use to display the output with specific number of lines.
+#sort –r <filename > - it will short the command, below option use for this command.
+  -b         ignores leading blanks
+  -d         considers only blanks and alphanumeric characters
+  -f          fold lower case to upper case characters
+  -g         compare according to general numerical value
+  -i          consider only printable characters
+  -M       compare (unknown) < `JAN' < ... < `DEC'
+  -n         compare according to string numerical value
+  -r        reverse the result of comparisons
+  -c         check whether input is sorted; does not sort
+  -k         start a key at POS1, end it at POS2 (origin 1)
+  -m        merges already sorted files; do not sort
+  -o         write result to FILE instead of standard output
+  -s         stabilize sort by disabling last-resort comparison
+  -S         use SIZE for main memory buffer
+  -t         use SEP instead of non-blank to blank transition
+  -T        use DIR for temporaries, not $TMPDIR or /tmp
+  -z         end lines with 0 byte, not newline
+#uniq <filename> - it will print only unique value, remove the duplicate one
+#paste – use to merge the file.
+#paste –s <filename> - print multiple lines as a single line
+#paste –d, file1 file2 – combine the file1 and file2 with separate , comma
+#cut –cl -<number of char to print> <filename> - it will print number of char only from the each line of file.
+#tr – convert upper to lower case vice versa
+#tr ‘a-f’ ‘A-F’ <filename> - convert the a to f letter to upper case.
+#diff file1 file2 – it will show the difference between two files.
+
+AT – Automatic task scheduling Command
+#at 10:10 – schedule the job at 10:10.
+#atq – see scheduled jobs
+#atrm <job number > - to remove the scheduled job.
+
+Crontab Command
+#crontab –e – to edit the job
+#crontab –l – to list scheduled jobs.
+#crontab –c –u <username> - to see particular user jobs.
+#crontab –r – to remove the crontab file.
+
+Quota Management
+#rpm –qa | grep quota – to verify whether rpm quota is installed or not.
+#quotacheck –cugm /qcheck – to create the quota.
+       -v scans and prints verbose
+                      -c performs a new scan
+                      -g scan quota for groups
+                      -m remount the scanned file system
+                      -u scan quota for users
+                      -a Check all quota-enabled, locally-mounted FS
+#quotaon –avug – switch on the quota
+#edquota <usernam> - to apply the quota on particular user
+# dd if=/dev/zero of=/qcheck/test bs=1024 count=10 – it will show the detail, please run after loggin with user account to check the limit.
+#quota –u <username> - to verify the quota setting.
+#edquota –T <username> - to increase the grace period for a user.
+#edquota –g <group name> - to create quota for group
+#quotaoff –avug – to remove the quota
+#cat /etc/fstab | grep qcheck – clear the quota entry
+
+AWK command in Unix/Linux
+awk options 'selection _criteria {action }' input-file > output-file
+-f program-file : Reads the AWK program source from the file 
+                  program-file, instead of from the 
+                  first command line argument.
+-F fs            : Use fs for the input field separator
+
+$cat > employee.txt 
+ajay manager account 45000
+sunil clerk account 25000
+varun manager sales 50000
+amit manager account 47000
+tarun peon sales 15000
+deepak clerk sales 23000
+sunil peon sales 13000
+satvik director purchase 80000 
+
+$ awk '{print}' employee.txt – it will print same as above
+$ awk '/manager/ {print}' employee.txt – Print the lines which match the given pattern.
+$ awk '{print $1,$4}' employee.txt  - Splitting a Line Into Fields : For each record i.e line, the awk command splits the record delimited by whitespace character by default and stores it in the $n variables. If the line has 4 words, it will be stored in $1, $2, $3 and $4 respectively. Also, $0 represents the whole line.
+$ awk '{print NR,$0}' employee.txt - Use of NR built-in variables (Display Line Number)
+$ awk '{print $1,$NF}' employee.txt  - Use of NF built-in variables (Display Last Field)  
+$ awk 'NR==3, NR==6 {print NR,$0}' employee.txt  - Another use of NR built-in variables (Display Line From 3 to 6)
+$ awk '{print NR "- " $1 }' geeksforgeeks.txt - To print the first item along with the row number(NR) separated with ” – “ from each line in geeksforgeeks.txt.
+$ awk '{print $2}' geeksforgeeks.txt  - To return the second column/item from geeksforgeeks.txt
+$ awk 'NF < 0' geeksforgeeks.txt - To print any non empty line if present
+$ awk '{ if (length($0) > max) max = length($0) } END { print max }' geeksforgeeks.txt - To find the length of the longest line present in the file.
+$ awk 'END { print NR }' geeksforgeeks.txt  - To count the lines in a file.
+$ awk '{ if($3 == "B6") print $0;}' geeksforgeeks.txt - To find/check for any string in any specific column.

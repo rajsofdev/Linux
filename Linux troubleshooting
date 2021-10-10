@@ -1,3 +1,5 @@
+https://www.redhat.com/sysadmin/linux-kernel-panic
+
 What is a kernel panic?
 A kernel panic is one of several Linux boot issues. 
 In basic terms, it is a situation when the kernel can't load properly and therefore the system fails to boot. 

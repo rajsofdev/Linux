@@ -6,7 +6,7 @@ then it points to the kernel (vmlinuz), and then the operating system boots.
 If initramfs gets corrupted or deleted at this stage because of recent OS patching, 
 updates, or other causes, then we face a kernel panic.
 
-
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
  
 If we dig into the boot process more, then we encounter the Linux "chicken/egg problem."
 [ Readers also liked: Terminals, shells, consoles, and command lines ]
